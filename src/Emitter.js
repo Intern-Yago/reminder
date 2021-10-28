@@ -17,8 +17,4 @@ const Emitter = {
     }
 }
 
-Emitter.on('click',() => console.log("Clicou!"))
-
-Emitter.events.click()
-
 export {Emitter}
