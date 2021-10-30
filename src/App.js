@@ -4,15 +4,15 @@ import { Emitter } from "./Emitter.js"
 
 const notify = Notifyer.notify({
     title: "Recado EsPCEx",
-    body: "Acorda para vida e vai estudar, vagabundo"
+    body: "Acorda para vida e vai estudar, vagabundo",
 })
 
 const App = {
     async start(){
         try{
+            
             await Notifyer.init()
-
-            Emitter.on("countdown-start",notify)
+            Emitter.on("countdown-start",notify)    
             
             Emitter.on("countdown-end", Timer.init)
 

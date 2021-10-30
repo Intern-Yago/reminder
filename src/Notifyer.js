@@ -12,5 +12,4 @@ const Notifyer={
         })
     }
 }
-
 export {Notifyer}
