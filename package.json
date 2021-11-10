@@ -5,8 +5,7 @@
   "main": "electron/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "npx electron-packager . --icon assets/sino.icns",
-    "createApp": "electron-packager . --platform-windows --arch-x64 --out /home/syri/MeuPrograma --overwrite"
+    "build": "npx electron-packager . --icon assets/sino.icns"
   },
   "keywords": [],
   "author": "",
