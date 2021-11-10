@@ -4,12 +4,23 @@
   "description": "",
   "main": "electron/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "npx electron-packager . --icon assets/sino.icns",
+    "createApp": "electron-packager . --platform-windows --arch-x64 --out /home/syri/MeuPrograma --overwrite"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "electron": "^15.3.0"
+  },
+  "bin":"electron/main.js",
+  "pkg":{ 
+    "assets":[
+    "assets/**/*",
+    "electron/**/*",
+    "src/**/*"
+    ]
   }
+
 }
